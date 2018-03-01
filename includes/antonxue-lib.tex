@@ -22,7 +22,7 @@
 \let\F\undefined
 \newcommand{\F}{{\mathbb{F}}}
 
-% Commands
+% Grouping
 \let\parens\undefined
 \newcommand{\parens}[1]{{\left(#1\right)}}
 
@@ -35,7 +35,13 @@
 \let\angles\undefined
 \newcommand{\angles}[1]{{\langle#1\rangle}}
 
-% Function Spaces
+% Sets and Function Spaces
+\let\setcomp\undefined
+\newcommand{\setcomp}[2]{{\left\{ #1\ :\ \text{#2}\right\}}}
+
+\let\powset\undefined
+\newcommand{\powset}[1]{{\mathcal{P}\left(#1\right)}}
+
 \let\mod\undefined
 \newcommand{\mod}[2]{{#1\ \mathrm{mod}\ #2}}
 
