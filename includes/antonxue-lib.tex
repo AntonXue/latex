@@ -1,7 +1,9 @@
 % Includes
-\usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{letltxmacro}
+\usepackage{listings}
 
 % Numbers
 \let\N\undefined
@@ -133,6 +135,35 @@
 
 \theoremstyle{definition}
 \newtheorem{example}{Example}
+
+% Code environment
+\lstdefinestyle{plainsty}{
+  basicstyle=\small\ttfamily,
+  language=C,
+  xleftmargin=\parindent,
+  aboveskip=1em,
+  belowskip=1em,
+  showspaces=false,
+  showstringspaces=false,
+  keywordstyle = {},
+}
+
+\lstnewenvironment{pcode}{\lstset{style=plainsty}}{}
+
+\let\pinl\undefined
+\newcommand{\pinl}{\lstinline[style=plainsty]}
+
+\newcommand*{\SavedLstInline}{} % Allows plain code usage in math mode.
+\LetLtxMacro\SavedLstInline\pinl
+\DeclareRobustCommand*{\pinl}{%
+  \ifmmode
+    \let\SavedBGroup\bgroup
+    \def\bgroup{%
+      \let\bgroup\SavedBGroup
+      \hbox\bgroup
+    }%
+  \fi
+\SavedLstInline}
 
 % Abbreviations
 \let\st\undefined
