@@ -7,112 +7,109 @@
 
 % Numbers
 \let\N\undefined
-\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
 
 \let\Z\undefined
-\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
 
 \let\Q\undefined
-\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
 
 \let\R\undefined
-\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
 
 \let\C\undefined
-\newcommand{\C}{{\mathbb{C}}}
-
-\let\F\undefined
-\newcommand{\F}{{\mathbb{F}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
 
 % Grouping
 \let\parens\undefined
-\newcommand{\parens}[1]{{\left(#1\right)}}
+\newcommand{\parens}[1]{\ensuremath{\left(#1\right)}}
 
 \let\brackets\undefined
-\newcommand{\brackets}[1]{{\left[#1\right]}}
+\newcommand{\brackets}[1]{\ensuremath{\left[#1\right]}}
 
 \let\braces\undefined
-\newcommand{\braces}[1]{{\left\{#1\right\}}}
+\newcommand{\braces}[1]{\ensuremath{\left\{#1\right\}}}
 
 \let\angles\undefined
-\newcommand{\angles}[1]{{\langle#1\rangle}}
+\newcommand{\angles}[1]{\ensuremath{\langle#1\rangle}}
 
 % Sets and Function Spaces
 \let\setcomp\undefined
-\newcommand{\setcomp}[2]{{\left\{#1 : #2\right\}}}
+\newcommand{\setcomp}[2]{\ensuremath{\left\{#1 : #2\right\}}}
 
 \let\powset\undefined
-\newcommand{\powset}[1]{{\mathcal{P}\left(#1\right)}}
+\newcommand{\powset}[1]{\ensuremath{\mathcal{P}\left(#1\right)}}
 
 \let\type\undefined
-\newcommand{\type}[3]{{#1 \colon #2 \to #3}}
+\newcommand{\type}[3]{\ensuremath{#1 \colon #2 \to #3}}
 
 \let\mod\undefined
-\newcommand{\mod}[2]{{#1\ \mathrm{mod}\ #2}}
+\newcommand{\mod}[2]{\ensuremath{#1\ \mathrm{mod}\ #2}}
 
 \let\ker\undefined
-\newcommand{\ker}[1]{{\mathrm{ker}\left[#1\right]}}
+\newcommand{\ker}[1]{\ensuremath{\mathrm{ker}\left[#1\right]}}
 
 \let\dom\undefined
-\newcommand{\dom}[1]{{\mathrm{dom}\left[#1\right]}}
+\newcommand{\dom}[1]{\ensuremath{\mathrm{dom}\left[#1\right]}}
 
 \let\ran\undefined
-\newcommand{\ran}[1]{{\mathrm{ran}\left[#1\right]}}
+\newcommand{\ran}[1]{\ensuremath{\mathrm{ran}\left[#1\right]}}
 
 \let\imag\undefined
-\newcommand{\imag}[1]{{\mathrm{imag}\left[#1\right]}}
+\newcommand{\imag}[1]{\ensuremath{\mathrm{imag}\left[#1\right]}}
 
 \let\coker\undefined
-\newcommand{\coker}[1]{{\mathrm{coker}\left[#1\right]}}
+\newcommand{\coker}[1]{\ensuremath{\mathrm{coker}\left[#1\right]}}
 
 \let\codim\undefined
-\newcommand{\codim}[1]{{\mathrm{codim}\left[#1\right]}}
+\newcommand{\codim}[1]{\ensuremath{\mathrm{codim}\left[#1\right]}}
 
 % Complex Numbers
 \let\Re\undefined
-\newcommand{\Re}[1]{{\mathrm{Re}\left[#1\right]}}
+\newcommand{\Re}[1]{\ensuremath{\mathrm{Re}\left[#1\right]}}
 
 \let\Im\undefined
-\newcommand{\Im}[1]{{\mathrm{Im}\left[#1\right]}}
+\newcommand{\Im}[1]{\ensuremath{\mathrm{Im}\left[#1\right]}}
 
 % Probability
 \let\P\undefined
-\newcommand{\P}[1]{{\mathrm{P}\left[#1\right]}}
+\newcommand{\P}[1]{\ensuremath{\mathrm{P}\left[#1\right]}}
 
 \let\E\undefined
-\newcommand{\E}[1]{{\mathrm{E}\left[#1\right]}}
+\newcommand{\E}[1]{\ensuremath{\mathrm{E}\left[#1\right]}}
 
 \let\Var\undefined
-\newcommand{\Var}[1]{{\mathrm{Var}\left[#1\right]}}
+\newcommand{\Var}[1]{\ensuremath{\mathrm{Var}\left[#1\right]}}
 
 \let\Cov\undefined
-\newcommand{\Cov}[1]{{\mathrm{Cov}\left[#1\right]}}
+\newcommand{\Cov}[1]{\ensuremath{\mathrm{Cov}\left[#1\right]}}
 
 % Linear Algebra
 \let\abs\undefined
-\newcommand{\abs}[1]{{\left\lvert#1\right\rvert}}
+\newcommand{\abs}[1]{\ensuremath{\left\lvert#1\right\rvert}}
 
 \let\norm\undefined
-\newcommand{\norm}[1]{{\left\lVert#1\right\rVert}}
+\newcommand{\norm}[1]{\ensuremath{\left\lVert#1\right\rVert}}
 
 \let\inner\undefined
-\newcommand{\inner}[1]{{\left\langle#1\right\rangle}}
+\newcommand{\inner}[1]{\ensuremath{\left\langle#1\right\rangle}}
 
 \let\adj\undefined
-\newcommand{\adj}[1]{{{#1}^{\ast}}}
+\newcommand{\adj}[1]{\ensuremath{{#1}^{\ast}}}
 
 \let\transp\undefined
-\newcommand{\transp}[1]{{{#1}^{T}}}
+\newcommand{\transp}[1]{\ensuremath{{#1}^{T}}}
 
 \let\inv\undefined
-\newcommand{\inv}[1]{{{#1}^{-1}}}
+\newcommand{\inv}[1]{\ensuremath{{#1}^{-1}}}
 
 % Computational Complexity
 \let\class\undefined % Complexity class
-\newcommand{\class}[1]{{\mathbf{#1}}}
+\newcommand{\class}[1]{\ensuremath{\mathbf{#1}}}
 
 \let\prob\undefined % Complexity problem
-\newcommand{\prob}[1]{{\text{#1}}}
+\newcommand{\prob}[1]{\ensuremath{\text{#1}}}
 
 % Theorem environment
 \theoremstyle{plain}
@@ -167,5 +164,5 @@
 
 % Abbreviations
 \let\st\undefined
-\newcommand{\st}{{\ \mathrm{s.t.}\ }}
+\newcommand{\st}{\ensuremath{\ \mathrm{s.t.}\ }}
 
