@@ -39,52 +39,52 @@
 \let\setcomp\undefined
 \newcommand{\setcomp}[2]{\ensuremath{\left\{#1 \st #2\right\}}}
 
-\let\powset\undefined
-\newcommand{\powset}[1]{\ensuremath{\mathcal{P}\left(#1\right)}}
-
 \let\type\undefined
 \newcommand{\type}[3]{\ensuremath{#1 \colon #2 \to #3}}
 
+\let\powset\undefined
+\newcommand{\powset}{\ensuremath{\mathcal{P}}}
+
 \let\mod\undefined
-\newcommand{\mod}[2]{\ensuremath{#1\ \mathrm{mod}\ #2}}
+\newcommand{\mod}{\ensuremath{\ \mathrm{mod}\ }}
 
 \let\ker\undefined
-\newcommand{\ker}[1]{\ensuremath{\mathrm{ker}\left(#1\right)}}
+\newcommand{\ker}{\ensuremath{\mathrm{ker}}}
 
 \let\dom\undefined
-\newcommand{\dom}[1]{\ensuremath{\mathrm{dom}\left(#1\right)}}
+\newcommand{\dom}{\ensuremath{\mathrm{dom}}}
 
 \let\ran\undefined
-\newcommand{\ran}[1]{\ensuremath{\mathrm{ran}\left(#1\right)}}
+\newcommand{\ran}{\ensuremath{\mathrm{ran}}}
 
 \let\imag\undefined
-\newcommand{\imag}[1]{\ensuremath{\mathrm{imag}\left(#1\right)}}
+\newcommand{\imag}{\ensuremath{\mathrm{imag}}}
 
 \let\coker\undefined
-\newcommand{\coker}[1]{\ensuremath{\mathrm{coker}\left(#1\right)}}
+\newcommand{\coker}{\ensuremath{\mathrm{coker}}}
 
 \let\codim\undefined
-\newcommand{\codim}[1]{\ensuremath{\mathrm{codim}\left(#1\right)}}
+\newcommand{\codim}{\ensuremath{\mathrm{codim}}}
 
 % Complex Numbers
 \let\Re\undefined
-\newcommand{\Re}[1]{\ensuremath{\mathrm{Re}\left[#1\right]}}
+\newcommand{\Re}{\ensuremath{\mathrm{Re}}}
 
 \let\Im\undefined
-\newcommand{\Im}[1]{\ensuremath{\mathrm{Im}\left[#1\right]}}
+\newcommand{\Im}{\ensuremath{\mathrm{Im}}}
 
 % Probability
 \let\Pr\undefined
-\newcommand{\Pr}[1]{\ensuremath{\mathrm{Pr}\left[#1\right]}}
+\newcommand{\Pr}{\ensuremath{\mathrm{Pr}}}
 
 \let\E\undefined
-\newcommand{\E}[1]{\ensuremath{\mathrm{E}\left[#1\right]}}
+\newcommand{\E}{\ensuremath{\mathrm{E}}}
 
 \let\Var\undefined
-\newcommand{\Var}[1]{\ensuremath{\mathrm{Var}\left[#1\right]}}
+\newcommand{\Var}{\ensuremath{\mathrm{Var}}}
 
 \let\Cov\undefined
-\newcommand{\Cov}[1]{\ensuremath{\mathrm{Cov}\left[#1\right]}}
+\newcommand{\Cov}{\ensuremath{\mathrm{Cov}}}
 
 % Linear Algebra
 \let\abs\undefined
@@ -94,7 +94,7 @@
 \newcommand{\norm}[1]{\ensuremath{\left\lVert#1\right\rVert}}
 
 \let\inner\undefined
-\newcommand{\inner}[1]{\ensuremath{\left\langle#1\right\rangle}}
+\newcommand{\inner}[2]{\ensuremath{\left\langle#1, #2\right\rangle}}
 
 \let\adj\undefined
 \newcommand{\adj}[1]{\ensuremath{{#1}^{\ast}}}
