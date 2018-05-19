@@ -6,6 +6,10 @@
 \usepackage{letltxmacro}
 \usepackage{listings}
 
+% Spacing
+\let\uspace\undefined
+\newcommand{\uspace}{\ensuremath{\ }}
+
 % Numbers
 \let\N\undefined
 \newcommand{\N}{\ensuremath{\mathbb{N}}}
@@ -58,7 +62,7 @@
 \newcommand{\powset}{\ensuremath{\mathcal{P}}}
 
 \let\mod\undefined
-\newcommand{\mod}{\ensuremath{\ \mathrm{mod}\ }}
+\newcommand{\mod}{\ensuremath{\uspace\mathrm{mod}\uspace}}
 
 \let\ker\undefined
 \newcommand{\ker}{\ensuremath{\mathrm{ker}}}
@@ -177,7 +181,7 @@
 
 % Abbreviations
 \let\st\undefined
-\newcommand{\st}{\ensuremath{\ \colon}}
+\newcommand{\st}{\ensuremath{\uspace\colon}}
 
 \let\ow\undefined
 \newcommand{\ow}{\ensuremath{\text{otherwise}}}
