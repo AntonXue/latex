@@ -38,6 +38,12 @@
 \let\C\undefined
 \newcommand{\C}{\ensuremath{\mathbb{C}}}
 
+\let\mcal\undefined
+\newcommand{\mcal}[1]{\ensuremath{\mathcal{#1}}}
+
+\let\mbb\undefined
+\newcommand{\mbb}[1]{\ensuremath{\mathbb{#1}}}
+
 % Grouping
 \let\parens\undefined
 \newcommand{\parens}[1]{\ensuremath{\left(#1\right)}}
@@ -155,6 +161,9 @@
 
 \theoremstyle{definition}
 \newtheorem{example}{Example}
+
+\theoremstyle{question}
+\newtheorem{question}{Question}
 
 % Code environment
 \lstdefinestyle{plainsty}{
