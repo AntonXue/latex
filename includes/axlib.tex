@@ -1,0 +1,220 @@
+% Includes
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{letltxmacro}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{physics}
+% \usepackage{stmaryrd}
+
+% Grouping
+\let\parens\undefined
+\newcommand{\parens}[1]{{\left(#1\right)}}
+
+\let\bracks\undefined
+\newcommand{\bracks}[1]{{\left[#1\right]}}
+
+\let\braces\undefined
+\newcommand{\braces}[1]{{\left\{#1\right\}}}
+
+\let\angles\undefined
+\newcommand{\angles}[1]{{\left\langle#1\right\rangle}}
+
+\let\ceil\undefined
+\newcommand{\ceil}[1]{{\left\lceil#1\right\rceil}}
+
+\let\floor\undefined
+\newcommand{\floor}[1]{{\left\lfloor#1\right\rfloor}}
+
+\let\abs\undefined
+\newcommand{\abs}[1]{{\left\lvert#1\right\rvert}}
+
+\let\norm\undefined
+\newcommand{\norm}[1]{{\left\lVert#1\right\rVert}}
+
+% Fonts in math mode
+\let\mrm\undefined
+\newcommand{\mrm}[1]{{\mathrm{#1}}}
+
+\let\mbb\undefined
+\newcommand{\mbb}[1]{{\mathbb{#1}}}
+
+\let\mbf\undefined
+\newcommand{\mbf}[1]{{\mathbf{#1}}}
+
+\let\mcal\undefined
+\newcommand{\mcal}[1]{{\mathcal{#1}}}
+
+% Operators on functions
+\let\mod\undefined
+\DeclareMathOperator{\mod}{mod}
+
+\let\ker\undefined
+\DeclareMathOperator{\ker}{ker}
+
+\let\dom\undefined
+\DeclareMathOperator{\dom}{dom}
+
+\let\ran\undefined
+\DeclareMathOperator{\ran}{ran}
+
+\let\im\undefined
+\DeclareMathOperator{\im}{im}
+
+\let\argmin\undefined
+\DeclareMathOperator{\argmin}{argmin}
+
+\let\argmax\undefined
+\DeclareMathOperator{\argmax}{argmax}
+
+\let\arginf\undefined
+\DeclareMathOperator{\arginf}{arginf}
+
+\let\argsup\undefined
+\DeclareMathOperator{\argsup}{argsup}
+
+% Sets and topology
+\let\intr\undefined
+\DeclareMathOperator{\intr}{int}
+
+\let\clos\undefined
+\DeclareMathOperator{\clos}{clos}
+
+\let\bndr\undefined
+\DeclareMathOperator{\bndr}{bndr}
+
+\let\dist\undefined
+\DeclareMathOperator{\dist}{dist}
+
+% Numbers
+\let\Re\undefined
+\DeclareMathOperator{\Re}{Re}
+
+\let\Im\undefined
+\DeclareMathOperator{\Im}{Im}
+
+\let\Arg\undefined
+\DeclareMathOperator{\Arg}{Arg}
+
+\let\mod\undefined
+\DeclareMathOperator{\mod}{mod}
+
+\let\sign\undefined
+\DeclareMathOperator{\sign}{sign}
+
+% Linear algebra and convex analysis
+\let\rank\undefined
+\DeclareMathOperator{\rank}{rank}
+
+\let\det\undefined
+\DeclareMathOperator{\det}{det}
+
+\let\tr\undefined
+\DeclareMathOperator{\tr}{tr}
+
+\let\conv\undefined
+\DeclareMathOperator{\conv}{conv}
+
+\let\epi\undefined
+\DeclareMathOperator{\epi}{epi}
+
+% Probability
+\let\Pr\undefined
+\DeclareMathOperator{\Pr}{Pr}
+
+\let\E\undefined
+\DeclareMathOperator{\E}{\mbf{E}}
+
+\let\Var\undefined
+\DeclareMathOperator{\Var}{Var}
+
+\let\Cov\undefined
+\DeclareMathOperator{\Cov}{Cov}
+
+% Computational Complexity
+\let\class\undefined % Complexity class
+\newcommand{\class}[1]{{{\textbf{#1}}}}
+
+% Theorem environment
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{plain}
+\newtheorem*{theorem*}{Theorem}
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{plain}
+\newtheorem*{lemma*}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{definition}
+\newtheorem*{definition*}{Definition}
+
+\theoremstyle{definition}
+\newtheorem{question}{Question}
+
+\theoremstyle{definition}
+\newtheorem*{question*}{Question}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+
+\theoremstyle{definition}
+\newtheorem*{problem*}{Problem}
+
+\theoremstyle{definition}
+\newtheorem{solution}{Solution}
+
+\theoremstyle{definition}
+\newtheorem*{solution*}{Solution}
+
+% Code environment
+\lstdefinestyle{plainsty}{
+  basicstyle=\small\ttfamily,
+  language=C,
+  xleftmargin=\parindent,
+  aboveskip=1em,
+  belowskip=1em,
+  showspaces=false,
+  showstringspaces=false,
+  keywordstyle = {},
+}
+
+\lstnewenvironment{pcode}{\lstset{style=plainsty}}{}
+
+\let\code\undefined
+\newcommand{\code}[1]{\texttt{#1}}
+
+
+% Abbreviations
+\let\st\undefined
+\newcommand{\st}{\text{s.t.}}
+
+\let\ow\undefined
+\newcommand{\ow}{\text{otherwise}}
+
+\let\eg\undefined
+\newcommand{\eg}{\text{e.g.}}
+
+\let\ie\undefined
+\newcommand{\ie}{\text{i.e.}}
+
+\let\cf\undefined
+\newcommand{\cf}{\text{c.f.}}
+
+% Custom text highlighting
+\let\red\undefined
+\newcommand{\red}[1]{\textbf{\color{red}#1}}
+
+
+
