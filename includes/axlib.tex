@@ -10,7 +10,7 @@
 \usepackage{letltxmacro}
 \usepackage{listings}
 \usepackage{mathtools}
-\usepackage{physics}
+% \usepackage{physics}
 % \usepackage{stmaryrd}
 
 % Grouping
@@ -50,6 +50,9 @@
 
 \let\mcal\undefined
 \newcommand{\mcal}[1]{{\mathcal{#1}}}
+
+\let\msf\undefined
+\newcommand{\msf}[1]{{\mathsf{#1}}}
 
 % Operators on functions
 \let\mod\undefined
@@ -152,6 +155,12 @@
 \let\Cov\undefined
 \DeclareMathOperator{\Cov}{Cov}
 
+\let\dd\undefined
+\newcommand{\dd}[1]{\,\mathrm{d}#1\,}
+
+\let\dv\undefined
+\newcommand{\dv}[1]{\frac{\mathrm{d}}{\mathrm{d} #1}}
+
 % Computational Complexity
 \let\class\undefined % Complexity class
 \newcommand{\class}[1]{{{\textbf{#1}}}}
@@ -176,12 +185,6 @@
 \newtheorem*{definition*}{Definition}
 
 \theoremstyle{definition}
-\newtheorem{assumption}{Assumption}
-
-\theoremstyle{definition}
-\newtheorem*{assumption*}{Assumption}
-
-\theoremstyle{definition}
 \newtheorem{question}{Question}
 
 \theoremstyle{definition}
@@ -198,12 +201,6 @@
 
 \theoremstyle{definition}
 \newtheorem*{solution*}{Solution}
-
-\theoremstyle{definition}
-\newtheorem{remark}{Remark}
-
-\theoremstyle{definition}
-\newtheorem*{remark*}{Remark}
 
 % Code environment
 \lstdefinestyle{plainsty}{
