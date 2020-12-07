@@ -161,28 +161,30 @@
 
 % Theorem environment
 \theoremstyle{definition}
-\newtheorem{question}{Question}
 
-\theoremstyle{definition}
-\newtheorem*{question*}{Question}
+\newtheorem{theorem}{Theorem}
+\newtheorem{theorem*}{Theorem}
 
-\theoremstyle{definition}
-\newtheorem{problem}{Problem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{lemma*}[theorem]{Lemma}
 
-\theoremstyle{definition}
-\newtheorem*{problem*}{Problem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{definition*}[theorem]{Definition}
 
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{proposition*}[theorem]{Proposition}
 
-\theoremstyle{definition}
-\newtheorem*{exercise*}{Exercise}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{example*}[theorem]{Example}
 
-\theoremstyle{definition}
-\newtheorem{solution}{Solution}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{problem*}[theorem]{Problem}
 
-\theoremstyle{definition}
-\newtheorem*{solution*}{Solution}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exercise*}[theorem]{Exercise}
+
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{solution*}[theorem]{Solution}
 
 % Code environment
 \lstdefinestyle{plainsty}{
