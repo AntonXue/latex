@@ -6,12 +6,9 @@
 \usepackage{comment}
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage[colorlinks]{hyperref}
-\usepackage{letltxmacro}
 \usepackage{listings}
 \usepackage{mathtools}
-% \usepackage{physics}
-% \usepackage{stmaryrd}
+\usepackage{xcolor}
 
 % Grouping
 \let\parens\undefined
@@ -163,24 +160,6 @@
 \newcommand{\class}[1]{{{\textbf{#1}}}}
 
 % Theorem environment
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}
-
-\theoremstyle{plain}
-\newtheorem*{theorem*}{Theorem}
-
-\theoremstyle{plain}
-\newtheorem{lemma}{Lemma}
-
-\theoremstyle{plain}
-\newtheorem*{lemma*}{Lemma}
-
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-
-\theoremstyle{definition}
-\newtheorem*{definition*}{Definition}
-
 \theoremstyle{definition}
 \newtheorem{question}{Question}
 
@@ -192,6 +171,12 @@
 
 \theoremstyle{definition}
 \newtheorem*{problem*}{Problem}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{definition}
+\newtheorem*{exercise*}{Exercise}
 
 \theoremstyle{definition}
 \newtheorem{solution}{Solution}
@@ -215,7 +200,6 @@
 
 \let\code\undefined
 \newcommand{\code}[1]{\texttt{#1}}
-
 
 % Abbreviations
 \let\st\undefined
